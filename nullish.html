@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullish</title>
+</head>
+<body>
+    <script>
+        let message1=null;
+        let message2="Mayur";
+        let message3=null;
+        alert(message1??message2??message3,"Anonymous")//Mayur
+        alert(message1||message2||message3,"Anonymous") //Mayur  only wirittern truetly value
+         </script>
+
+         <!-- 2 eaxmple of we can see differnce between nullish and or operator -->
+         <!-- let height = 0;
+//falsy value is======> 0,undefind,NaN,'',Null,false......
+
+ //for || opertor if the value is falsy so its print withot false value
+
+         alert(height || 100); // 100
+         alert(height ?? 100); // 0 -->
+
+
+         <!-- 3 example -->
+        <!-- let height = null;
+        let width = null;
+
+        important: use parentheses
+        let area = (height ?? 100) * (width ?? 50);
+        alert(area); // 5000 -->
+
+
+<script>
+    let myval=null; //if use null or undefiend so its take oopsote value in nullish
+        let myval1=myval || 10;//for || opertor if we use false value do its print opisite value 10.
+        let myval2=myval ?? 10;
+
+        console.log("Myval ||="+myval1);
+        
+        console.log("Myval ??="+myval2);
+
+</script>
+        
+
+</body>
+</html>

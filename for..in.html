@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for int</title>
+</head>
+<body>
+    <script>
+        let user={
+            name:"Mayur",
+            age:30,
+        }
+        user.firstnam="Jadav";
+        for(let key in user){
+            alert(key);//only shown key hear
+            alert(user[key]);//only shown hear key:value
+        }
+
+        let user1={
+            john:10,
+            rehan:1,
+            Ram:3,
+        }
+        let sum=0;
+        for(let key in user1){
+            sum+=user1(key);
+        }
+        alert(sum);
+    </script>
+    
+</body>
+</html>

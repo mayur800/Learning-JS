@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this in js</title>
+</head>
+<body>
+    <script>
+        //this keyword are use for the current contrst
+        // let user={
+        //     name:"Mayur",
+        //     lastName:"Jadav",
+        //     sayhi(){
+        //         alert(this.name);//indicate the current objects
+        //     }
+        //   };
+
+
+        //arrow function in this method
+        // let user={
+        //     name:"Mayur",
+        //     age:20,
+        //     sayhi(){
+        //         let arrow=()=>alert(this.name);
+        //     }
+        // };
+
+//FOR THE CONSTRUCTOR WE CAN USE SAME NAME AS A FUNCTION NAME AND ITS CAPITAL AND USE NEW KEYWORD  FOR THAT...
+
+function A() {  }
+function B() {  }
+
+let a = new A();  //this is constructor using new keyword and capital A.
+let b = new B();
+
+alert( a ==b)
+
+        //constructor in js
+        // function User(){
+        //     alert(new.target);
+        // }
+        // user();
+        // new User();
+    </script>
+    
+</body>
+</html>
