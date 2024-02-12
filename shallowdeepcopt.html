@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shallow copy</title>
+</head>
+<body>
+    <script>
+
+        //shallow and Deep copy
+        let user={
+            name:"Mayur",
+            address:{
+                city:"Delhi",
+                age:21
+            }
+        };
+        //This is for the shallowcopy
+        //shallowcopy using the object.assign() 
+        let shallowcopy=object.assign({},user);
+        shallowcopy.address.city="Mumbai";
+
+        console.log(user.address.city);  //Mumbai
+        console.log(shallowcopy.address.city);  //Mumbai
+
+
+        //this is for Deep copy
+        let deepcopy=JSON.parse(JSON.stringify(user));
+        deepcopy.address.city="Bangoler";
+
+        console.log(user.address.city);   //Delhi
+        console.log(deepcopy.address.city);    //Bangoler
+
+
+//******// shallow copy is nested object case will modified the parent object property 
+//But in Deep copy in nested object cass will modified the parent object propery...........
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbaje Collection</title>
+</head>
+<body>
+    <script>
+        //the main concpt of garbage collection is reachbility
+        //'reachability means are thats value are accessible or usable somehow'.that are gureented to stored in memory
+
+        let user={
+            name:"Mayur",
+        };
+        user=null;
+
+        //so now mayur is unreachbe and no access now so its gone on garbage collection
+
+
+        //2 two refreencess
+        let user1={
+            FirstName:"Sanjay",
+        };
+        let admin=user1;
+        user1=null;
+        //the object is still reachable and its global variable so its stay in memmory
+
+    </script>
+    
+</body>
+</html>

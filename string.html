@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <script>
+        //string are shown by three types
+        // let double="ram";
+        // let single='rajesh';
+        // let third=`rajesh1`;
+
+
+        //seraching for substring
+        let user="Learning Javascript";
+        alert(user.indexOf("Learning"));//0
+        alert(user.indexOf("learning"));//-1 not found because index are not match
+        alert(user.indexOf("id"));
+
+        //include
+        //its shown true or false
+        alert("Hello everyone".include("everyone"));//true
+        alert("Hello everyone".include("Mayur"));//false
+
+        //statwith
+        alert("Hello everyone".startwith("He"));//true
+        alert("Hello everyone".startwith("one"));//false
+
+        //endwith
+        alert("Hello everyone".startwith("one"));//true
+        alert("Hello everyone".startwith("every"));//false
+
+//substring
+//str.slice(start,end)
+
+let str="Hello everyone";
+alert(str.slice(0,4));
+alert(str.slice(0,1));
+
+
+let str1="Hello";
+console.log(str.slice(2));
+
+let user1="Hello everyone";
+alert(user1.substring(2,6));
+alert(user1.substring(6,2));//ANS===>"" //this is shown emapty because its not take negative
+
+alert(user1.slice(1,5));
+alert(user1.slice(6,2));
+</script>
+    
+</body>
+</html>

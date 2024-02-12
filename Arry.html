@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+
+        //create the array
+        let arr=new Array();
+        let array=[];
+
+        let fruits=["Apple","Banana","Grapes"];//end with comma
+        alert(fruits[1]);//Apple
+        alert(fruits[0]);//Banana
+        //update the array value
+        fruits[1]="pear"
+
+        //if we want to find the length of the array
+        alert(fruits.length);//3 means Apple.....etc....
+
+
+//pop 
+     //pop are use for the remove from the last
+     let arr1=["Mayur","Sanjay","Ram"];
+     alert(arr.pop());//Ram remove from the last element
+     alert(arr1);//mayur,sanjay
+
+//push
+    //element are added at the end in array
+    let arr2=["Mayur","Sanjay"];
+     alert(arr.push("ram"));//Ram remove from the last element
+     alert(arr2);
+//shift
+     //element are remove from the first
+     let arr3=["Mayur","Sanjay","Ram"];
+     alert(arr.shift());//remove the first element mayur from an array
+     alert(arr1);
+//unshift
+    //element are at the first position
+    let arr4=["Mayur","Sanjay","Ram"];
+     alert(arr.unshift("Jaimin"));//remove the first element mayur from an array
+     alert(arr4);
+//slice 
+    let arr6 = ["t", "e", "s", "t"];
+    alert( arr6.slice(1, 3) ); // e,s (copy from 1 to 3)
+    alert( arr6.slice(-2) ); 
+
+
+//concationg the array
+ let array1=[1,2,3,4,5];
+ alert(array1.concat([6,7]));
+
+ //FOREACH
+     //iterate over the all of theelement of the array ...
+     let array7=[1,2,3,4,5];
+     let aarray8=array7.forEach((iteam,index,array)=>{
+        alert(`${item} is at ${index} in ${array}`);
+     });
+        // ["Billo","Mayur","Ram"].forEach(alert);
+
+    </script>
+    
+</body>
+</html>

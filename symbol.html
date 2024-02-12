@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>symbol</title>
+</head>
+<body><script>
+      <!-- //symbool to be unique  -->
+    <!-- //symbol are identity the uniques thing.if we use same symbool with same name but its shown
+        // that doent affect anthing. -->
+    let id3=symbol("id");
+    let id4=symbol("id");
+    alert(id3==id4);       //false because of symbool take unique value
+
+//symbool are not authoconerted.
+
+
+let id=symbol("Mayur");
+alert(id.tostring()); //if we want to convert so we use tostring not its direct convert in string
+
+
+let id1=symbol("id");
+let user={
+    name:"Mayur",
+    age:21,
+};
+for (let key in user)
+alert(key);
+alert(user[key]);
+
+</script>
+  
+
+    
+</body>
+</html>

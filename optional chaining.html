@@ -8,7 +8,21 @@
 <body>
     <script>
         //optional chaining is use for the access the object
-        
+        //optional chaining are use for the access the nested object properties.using the "?".
+        //its not shoen error its give the undefiend
+        const user={
+            name:"Mayur",
+            age:30,
+            addres:{
+                street:"Main st",
+                City:"New Road",
+            },
+        };
+        console.log(user?.addres?.City); //? shoewn undefiend not shown error.   //error remove if we use "?".
+        //if we use ? so its not shown error its shoen undefind
+
+       
+
     </script>
     
 </body>

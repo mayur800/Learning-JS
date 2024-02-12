@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object to primitive</title>
+</head>
+<body>
+    <script>
+
+//why needed
+//when we want to add obj1+obj2 or obj1-obj2 that time use this
+
+//USE FOR OBJECT TO STRING AND NUMBER CONVERSION
+//THERE ARE THREE METHOD FOR THAT
+//1 Symbol.toPrimitive
+//2 tostring()
+//3 valueof() 
+
+      //1 object to string conversion
+        //objecct
+        alert(obj);
+        //using objecct as property
+        anotheobj[obj]=123
+
+
+        //2 object to number conversion
+        let  number=Number(obj);
+
+        //except binary plus
+        let n=+obj;
+        let data=delte1-delta2;
+
+//"tostring()" or method implememntation "valueof()"
+
+//tostring() method returns object and......
+//valueof() method returns object itself.....
+
+        let user={
+            name:"Mayur",
+             toString(){
+                return this.name;
+             }
+        };
+        alert(user);//Mayur
+        alert(user+500);//Mayur500
+
+
+    </script>
+    
+</body>
+</html>

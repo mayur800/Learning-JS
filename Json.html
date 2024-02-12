@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        //Json are use for the data exchange if client use js and server use php,ruby thats time.......
+
+        //JSON.Stringify to convert object into JSON.
+       //JSON.Parse to JSON into  objects.
+
+
+       //onject to convert into the object using the stringfy
+
+       let student={
+        name:"John",
+        age:21,
+        isAdmin:false,
+        firstName:"Mayur",
+        LastName:"Jadav",
+       };
+       let json=JSON.stringify(student);
+       alert(json);
+
+
+
+let student1={
+  "name": "John",
+  "age": 30,
+  "isAdmin": false,
+  "courses": ["html", "css", "js"],
+  "spouse": null
+}
+let json1=JSON.parse(student1);
+alert(json1);
+
+    </script>
+    
+</body>
+</html>

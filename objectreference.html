@@ -10,7 +10,22 @@
         let user={name:"Mayur"};
         let admin=user;
         admin.user="sanjay";
-        alert(user.name);
+        alert(user.name);//Mayur
+
+
+
+        //assign
+        let user1={
+            name:"Sanjay",
+        };
+        let per1={age:30,};
+        let per2={firstName:"Jadav",};
+
+        object.assign(user1,per1,per2);
+        alert(user1.name);//sanjay
+        alert(user1.per1);//true
+        alert(user1.per2);//true
+
     </script>
     
 </body>
