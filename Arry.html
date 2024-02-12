@@ -61,6 +61,19 @@
      });
         // ["Billo","Mayur","Ram"].forEach(alert);
 
+
+
+        ///Rest Parameter
+        let options={
+            title:"MyBio",
+            width:200,
+            height:100,
+        };
+        let{title,...rest}=options;
+        alert(rest.width);//200
+        alert(rest.height);//100
+
+
     </script>
     
 </body>

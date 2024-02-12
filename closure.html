@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        //closure is use for the outer function variable are acces from inner function its called closure.
+        //  closure
+      const outerfunc=(a)=>{
+        let b=10;
+        const innerfunc=()=>{
+            return a+b;
+            console.log(`the sum of two number is ${sum}`);
+        }
+        innerfunc();
+      }
+      outerfunc(5);
+
+      //IIFE
+      //imediately  involved function expression
+      //function expression are created and immediatey called.
+      (function(){
+        var message="Hello";
+        alert(message);//Hello
+
+      })();
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call apply and bind</title>
+</head>
+<body>
+    <script>
+        //call() method allows an object to use method of another objects......
+           let function1={
+            FName:"Mayur",
+            LName:"Jadav",
+            printFullName:function(hometown,country){
+                return this.FName + "" + this.LName + " " + hometown + " " + country;
+            }
+           }
+           let function2={
+            FName:"Abhishek\n",
+            LName:"Bhatt",
+           }
+           //call()
+           alert(function1.printFullName.call(function2,"Ahmedabad","India"));//THIS IS CALL METHOD
+           //one method of object are use on another object its called call method
+
+           //Apply()
+     alert(function1.printFullName.apply(function2,["Ahmedabad","India"]));//this is use an array form
+//only change is in form of array
+
+//Bind()
+ var result=function1.printFullName.call(function2,"Ahmedabad","India");
+ alert(result);
+ console.log(result);
+
+    </script>
+    
+</body>
+</html>
